@@ -2,10 +2,10 @@
 # IB DP CompSci - First Class Exercise: Data Types
 
 # For each variable below, write a comment with what kind of thing it is (int, float, str, or bool)
-number = 7
-decimal = 3.5
-word = "hello"
-is_sunny = True
+number = 7 #Int
+decimal = 3.5 #Float
+word = "hello" #Str
+is_sunny = True #Bool
 print(type(number))
 print(type(decimal))
 print(type(word))

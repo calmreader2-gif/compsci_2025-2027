@@ -10,30 +10,30 @@ addition = num1 + num2
 print(addition)
 
 # TODO: Calculate subtraction
-subtraction = None
+subtraction = num1 - num2
 print(subtraction)
 
 # TODO: Calculate multiplication
-multiplication = None
+multiplication = num1 * num2
 print(multiplication)
 
 # TODO: Calculate division
-division = None
+division = num1 / num2
 print(division)
 
 # TODO: Calculate floor division
-floor_division = None
+floor_division = num1 // num2
 print(floor_division)
 
 # TODO: Calculate modulus (remainder)
-modulus = None
+modulus = num1 % num2
 print(modulus)
 
 # Order of operations - what will be printed?
 result1 = 2 + 3 * 4
 result2 = (2 + 3) * 4
-print(result1)  # Write your guess as a comment
-print(result2)  # Write your guess as a comment
+print(result1)  #14
+print(result2)  # 20
 
 # COMPARISON OPERATORS
 # Compare ages
@@ -45,11 +45,11 @@ print(your_age == friend_age)  # Same age?
 print(your_age < friend_age)   # Are you younger?
 
 # TODO: Check if you are at least 16
-at_least_16 = None
+at_least_16 = 16 <= your_age
 print(at_least_16)
 
 # TODO: Check if your friend is not 18
-friend_not_18 = None
+friend_not_18 = 18 > friend_age
 print(friend_not_18)
 
 # LOGICAL OPERATORS
@@ -63,11 +63,11 @@ can_go_beach = temperature > 20 and not is_raining
 print(can_go_beach)
 
 # TODO: Should study inside if raining OR it's a weekday
-should_study = None
+should_study = is_raining == True or is_weekend == False
 print(should_study)
 
 # TODO: Wear jacket if cold OR raining
-wear_jacket = None
+wear_jacket = temperature < 10 or is_raining
 print(wear_jacket)
 
 # STRING METHODS - BASIC
@@ -76,7 +76,7 @@ messy_name = "  bungee J. UMPERTON   "
 print(messy_name)
 
 #TODO: Remove spaces and fix capitalization
-clean_name = None
+clean_name = messy_name.strip().title() #strip is removing spaces, title is proper capitalization
 print(clean_name)
 
 # String information
@@ -86,15 +86,16 @@ print(sentence.upper())     # Uppercase
 print(sentence.lower())     # Lowercase
 
 # TODO: Count how many 'a' letters
-count_a = None
+count_a = sentence.count("a")
+
 print(count_a)
 
 # TODO: Check if starts with 'Python'
-starts_python = None
+starts_python = sentence.startswith("python")
 print(starts_python)
 
 # TODO: Check if ends with '!'
-ends_exclamation = None
+ends_exclamation = sentence.endswith("!")
 print(ends_exclamation)
 
 # STRING METHODS - REPLACING
